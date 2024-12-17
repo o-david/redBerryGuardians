@@ -32,6 +32,21 @@ function turnOff(){
     all.style.color = 'black'
     all.style.backgroundColor = 'white'
 }
+function toggleLight(){
+    if (light.getAttribute('src') != 'res/light-on.svg' ) {
+        console.log(light.getAttribute('src'));
+        
+        light.setAttribute('src', 'res/light-on.svg')
+        all.style.color = 'white'
+        all.style.backgroundColor = 'black'
+        
+    } else {
+        light.setAttribute('src', 'res/light-off.svg')
+        all.style.color = 'black'
+        all.style.backgroundColor = 'white'
+        
+    }
+}
 
 
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+    <h1>Mini Calculator</h1>
+    <div>
+        <h2>0</h2>
+        <span class=" cursor-pointer hover:bg-green-500" onclick="copyAnswer()">copy Answer</span>
+
+        <input id="input1" type="number">
+        <input id="input2" type="number">
+        <button onclick="solve('add')">+</button>
+        <button onclick="solve('sub')">-</button>
+        <button onclick="solve('divide')">/</button>
+        <button onclick="solve('multi')">*</button>
+
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html>
